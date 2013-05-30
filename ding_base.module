@@ -139,11 +139,16 @@ function ding_base_date_formats() {
     'locales' => array(),
   );
 
+  $formats[] = array(
+    'type'    => 'date_only',
+    'format'  => 'l j. F',
+    'locales' => array(),
+  );
+
   // save certain date formats into variables
   foreach ($formats as $format) {
     variable_set('date_format_' . $format['type'], $format['format']);
   }
-  variable_set('date_format_date_only', 'l j. F');
 
   return $formats;
 }
