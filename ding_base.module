@@ -143,9 +143,7 @@ function ding_base_date_formats() {
   foreach ($formats as $format) {
     variable_set('date_format_' . $format['type'], $format['format']);
   }
-  variable_set('date_format_long_date_only', 'l j. F Y');
   variable_set('date_format_date_only', 'l j. F');
-  variable_set('date_format_time_only', 'G:i');
 
   return $formats;
 }
