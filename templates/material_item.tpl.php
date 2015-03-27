@@ -10,6 +10,7 @@
     <?php print $cover; ?>
   </div>
   <div class="right-column">
+    <h4 class="item-author"><?php if(isset($element['#author'])){ print $element['#author']; }  ?></h4>
     <h3 class="item-title"><?php print $title; ?></h3>
     <?php if (isset($material_message)) : ?>
     <div class="<?php print $material_message['class']; ?>"><?php print $material_message['message']; ?></div>
